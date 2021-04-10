@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Université</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <meta name="author" content="Antoine Masuyer, Mamoudou Diallo" />
+</head>
+<body>
+    <nav id="menu">
+    <ul>
+        <li><a href="index.html"><div class="test">Accueil</div></a></li>
+        <li onmouseover="menu('ville',true);" onmouseout="menu('ville',false);"><a href="ville.html"><div class="test" id="ville_hover">Ville</div></a>
+            <ul id="ville">
+                <li><a href="ville.html#localisation">Localisation</a></li>
+                <li><a href="ville.html#topographie">Topographie</a></li>
+                <li><a href="ville.html#media">Média</a></li>
+                <li><a href="ville.html#religion">Religion</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('tourisme',true);" onmouseout="menu('tourisme',false);"><a href="tourisme.html"><div class="test" id="tourisme_hover">Tourisme</div></a>
+            <ul id="tourisme">
+                <li><a href="tourisme.html#ville">Ville</a></li>
+                <li><a href="tourisme.html#culture">Culture</a></li>
+                <li><a href="tourisme.html#sport">Sport</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('universite',true);" onmouseout="menu('universite',false);"><a href="universite.html"><div class="test" id="universite_hover">Université</div></a>
+            <ul id="universite">
+                <li><a href="universite.html#etablissement">Etablissements et enseignements</a></li>
+                <li><a href="universite.html#partenariat">Partenariat</a></li>
+                <li><a href="universite.html#classement">Classements internationaux</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('etudiant',true);" onmouseout="menu('etudiant',false);"><a href="vie_etudiante.html"><div class="test" id="etudian_hover">Vie étudiante</div></a>
+            <ul id="etudiant">
+                <li><a href="vie_etudiante.html#diplome">Diplôme</a></li>
+                <li><a href="vie_etudiante.html#loisirs">Loisirs</a></li>
+                <li><a href="vie_etudiante.html#classement">Classement</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('transport',true);" onmouseout="menu('transport',false);"><a href="transport.html"><div class="test" id="transport_hover">Transport en commun</div></a>
+            <ul id="transport">
+                <li><a href="transport.html#communes">Communes</a></li>
+                <li><a href="transport.html#lignes">Lignes</a></li>
+                <li><a href="transport.html#velo">Vélos</a></li>
+            </ul>
+        </li>
+        <li><a href="gallerie.html"><div class="test">Gallerie</div></a></li>
+        <li><a href="espace_membre.html"><div class="test">Espace Membre</div></a></li>
+    </ul>
+</nav>
+
+    <section id="corps">
+        <h2>UNIVERSITE</h2>
+        <img src="media/ub.jpg"  alt="" width="300" height="150" class="float_right">
+        <p>
+            L'université de Bourgogne (uB) est une université située dans la ville de Dijon. Elle possède également des antennes à Auxerre, Chalon-sur-Saône, Le Creusot, Mâcon et Nevers. Elle offre un large éventail de formation dans toutes les disciplines (hors odontologie : droit, économie, gestion, lettres, langues, médecine, pharmacie, sciences humaines, sciences exactes et expérimentales) et à tous les niveaux (licence, master, doctorat, diplômes de technologie, d'ingénieurs, professionnalisés, de santé, d'enseignement et de formation à la recherche). Elle a été fondée en 1722.
+            Plus de 30 000 étudiants sont accueillis chaque année, plus de 2 000 salariés ou demandeurs d'emploi s'y forment dans le cadre de la formation continue. Propriétaire de vignoble et d'un centre d'expérimentation à Marsannay-la-Côte (agglomération dijonnaise), elle offre des filières complètes en sciences de la vigne et œnologie, regroupés dans l'Institut Jules-Guyot nommé d'après Jules Guyot. L'université de Bourgogne consacre près du tiers de son budget (hors salaires) à la recherche.
+            Depuis le 1er avril 2015, l'université de Bourgogne est membre fondateur de la communauté d'universités et établissements Université Bourgogne - Franche-Comté (COMUE UBFC), qui a son siège à Besançon.
+        </p>
+        <h3 id="etablissement" class="ancre">Unités de formation et de recherche</h3>
+        <p>L'université compte huit UFR9 :</p>
+        <ul>
+            <li>Droit et Sciences Economique et Politique</li>
+            <li>Langues et Communication</li>
+            <li>Lettres et Philosophie</li>
+            <li>Sciences de Santé</li>
+            <li>Sciences du Sport (STAPS)</li>
+            <li>Sciences et Techniques</li>
+            <li>Sciences Humaines</li>
+            <li>Sciences Vie, Terre et Environnement</li>
+        </ul>
+
+        <img src="media/bu_bourgogne.jpg"  alt="" width="400" height="200" onclick="show(0)">
+        <img src="media/erasme.jpg"  alt="" width="400" height="200" onclick="show(1)">
+        <div id="modal_image"><img alt="Fleche suivante" src="media/fleche_precedent.png" id="next" class="fleche" onclick="precedent()"><img class="fleche" alt="Fleche précédent" src="media/fleche_suivante.png" id="precedent" onclick="precedent()"><button onclick="fermer_diapo()">Fermer le Diaporama</button></div>
+        <h3>Instituts</h3>
+        <p>
+            L'université compte six instituts d'enseignement9 :</p>
+        <ul>
+            <li>Institut d'administration des entreprises (IAE)</li>
+            <li>Institut de la Vigne et du Vin Jules Guyot (IUVV)</li>
+            <li>Institut Supérieur de l'Automobile et des Transports (ISAT)</li>
+            <li>Institut Universitaire de Technologie de Dijon-Auxerre</li>
+            <li>Institut Universitaire de Technologie de Chalon-sur-Saône</li>
+            <li>Institut Universitaire de Technologie du Creusot</li>
+        </ul>
+
+        <p>
+            L'université compte également six écoles doctorales et 32 laboratoires et entités de recherche.
+        </p>
+
+        <h3 id="enseignement" class="ancre">Enseignement</h3>
+        <img src="media/enseignement.jpg"  alt="" width="300" height="150" class="float_left">
+        <p>L'université propose près de 400 formations diplomantes :</p>
+        <ul>
+            <li>26 licences générales</li>
+            <li>132 masters</li>
+            <li>32 disciplines doctorat</li>
+            <li>15 DUT</li>
+            <li>60 diplômes universitaires</li>
+            <li>90 diplômes et spécialisations santé</li>
+        </ul>
+
+        <p>
+            Elle accueille dans ses effectifs en 2019 1 854 étudiants en formation continue et plus de 750 en formation à distance.
+        </p>
+
+        <h3 id="partenariat" class="ancre">Partenariats intenrationaux</h3>
+        <img src="media/partenariat.jpg"  alt="" width="300" height="150" class="float_right">
+        <p>
+            L'université de Bourgogne a signé 386 partenariats avec des universités internationales, permettant la mobilité de ses étudiants et chercheurs partout dans le monde ainsi que l'accueil de 2 783 étudiants internationaux de 120 nationalités différentes10. Elle proposose également des cursus intégrés (double ou triple diplôme) en langue, sciences humaines, droit ou sciences politiques, soutenus par l'Université Franco-Allemande, avec l'Université Johannes Gutenberg de Mayence en Allemagne, mais aussi celles de Sherbrooke (Canada) et Opole (Pologne) en option trinationale suivant les cursus.
+        </p>
+
+        <h3>Université Européenne</h3>
+        <p>
+            En juin 2019, l'université est avec 14 autres universités françaises l'une des lauréates du premier appel à projet « Universités européenne »s de la Commission européenne. Réunies au sein de l'alliance FORTHEM, les universités de Dijon, Palerme (Italie), Jyväskylä (Finlande), Opole (Pologne), Valence (Espagne) , Mayence (Allemagne), et de Lettonie, font partie d'une des premières 17 universités européennes retenues par la Commission (sur 54 dossiers de candidatures déposés)11.
+        </p>
+
+        <h3 id="classement" class="ancre">Classements internationaux</h3>
+        <p>
+            L'université de Bourgogne figure depuis 2017 au classement des meilleurs université mondiale réalisé par l'université Jiao Tong de Shanghai (Academic Ranking of World Universities), à la 601e-700e place en 2019. La même année, elle était classée 768e par le classement Ranking Web of World Universities qui est basé sur le volume et la qualité des publications électroniques des 6 000 écoles et universités classées.
+        </p> <br/><br/>
+        <button id="small" onclick="m_small();">Petit</button>
+        <button id="medium" onclick="m_medium();">Moyen</button>
+        <button id="big" onclick="m_big();">Grand</button><br/><br/>
+        <video id="movie">
+            <source src="media/universite.mp4" type="video/mp4">
+        </video> <br/>
+        <button id="jouer" onclick="jouer()">Pause/Play</button><br/><br/>
+
+
+
+        <div id="date_affiche"></div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="https://fr.wikipedia.org/wiki/Dijon"><img alt="Logo Wiki" src="media/logo_wikipedia.png"></a></li>
+            <li><a href="https://www.u-bourgogne.fr/"><img alt="Logo Wiki" src="media/logo_universite.png"></a></li>
+            <li><a href="https://www.divia.fr/"><img alt="Logo Wiki" src="media/logo_divia.png"></a></li>
+            <li onclick="ouvrir_modal()"><img alt="Logo Wiki" src="media/logo_mail.png"></li>
+        </ul>
+        <div id="modal_contact" class="modal">
+            <div class="modal_content">
+                <div id="header_modal">
+                    <p class="close" onclick="fermer_modal()">&times;</p>
+                    <h2>Contact</h2>
+                </div>
+                <form action="javascript:void(0);">
+                    <p>
+                        <label for="mail">Votre adresse mail : </label>
+                        <input type="email" name="mail" id="mail" placeholder="exemple@exemple.com"/><br/><br/>
+                        <label for="avis">
+                            Votre commentaire :
+                            <textarea name="avis" id="avis" cols="60" placeholder="Ecrivez votre commentaire ici..."></textarea>
+                        </label><br/>
+                        <span class="button_modal_form">
+                    <button onclick="fermer_modal()">Fermer</button><input type="submit" value="Envoyer" onclick="submit_modal_form()">
+                        </span>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

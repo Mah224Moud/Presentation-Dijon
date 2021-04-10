@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antoine Masuyer, Mamoudou Diallo" />
+    <title>Tourisme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav id="menu">
+    <ul>
+        <li><a href="index.html"><div class="test">Accueil</div></a></li>
+        <li onmouseover="menu('ville',true);" onmouseout="menu('ville',false);"><a href="ville.html"><div class="test" id="ville_hover">Ville</div></a>
+            <ul id="ville">
+                <li><a href="ville.html#localisation">Localisation</a></li>
+                <li><a href="ville.html#topographie">Topographie</a></li>
+                <li><a href="ville.html#media">Média</a></li>
+                <li><a href="ville.html#religion">Religion</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('tourisme',true);" onmouseout="menu('tourisme',false);"><a href="tourisme.html"><div class="test" id="tourisme_hover">Tourisme</div></a>
+            <ul id="tourisme">
+                <li><a href="tourisme.html#ville">Ville</a></li>
+                <li><a href="tourisme.html#culture">Culture</a></li>
+                <li><a href="tourisme.html#sport">Sport</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('universite',true);" onmouseout="menu('universite',false);"><a href="universite.html"><div class="test" id="universite_hover">Université</div></a>
+            <ul id="universite">
+                <li><a href="universite.html#etablissement">Etablissements et enseignements</a></li>
+                <li><a href="universite.html#partenariat">Partenariat</a></li>
+                <li><a href="universite.html#classement">Classements internationaux</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('etudiant',true);" onmouseout="menu('etudiant',false);"><a href="vie_etudiante.html"><div class="test" id="etudian_hover">Vie étudiante</div></a>
+            <ul id="etudiant">
+                <li><a href="vie_etudiante.html#diplome">Diplôme</a></li>
+                <li><a href="vie_etudiante.html#loisirs">Loisirs</a></li>
+                <li><a href="vie_etudiante.html#classement">Classement</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('transport',true);" onmouseout="menu('transport',false);"><a href="transport.html"><div class="test" id="transport_hover">Transport en commun</div></a>
+            <ul id="transport">
+                <li><a href="transport.html#communes">Communes</a></li>
+                <li><a href="transport.html#lignes">Lignes</a></li>
+                <li><a href="transport.html#velo">Vélos</a></li>
+            </ul>
+        </li>
+        <li><a href="gallerie.html"><div class="test">Gallerie</div></a></li>
+        <li><a href="espace_membre.html"><div class="test">Espace Membre</div></a></li>
+    </ul>
+</nav>
+
+    <section id="corps">
+        <h2>TOURISME</h2>
+        <p>
+            Le tourisme occupe une place non négligeable dans l'économie de Dijon. L'intérêt touristique de la ville repose principalement sur la richesse de son patrimoine historique et sur la proximité de la côte viticole. Ainsi, la vieille ville possède trois des dix monuments les plus visités en Côte-d'Or en 2004, année au cours de laquelle le musée des beaux-arts de Dijon a été fréquenté par plus de 210 000 visiteurs. L'agglomération compte près de 500 restaurants et plusieurs zones hôtelières (Toison d'Or, quartier de la gare centrale…). On peut distinguer à Dijon trois grands secteurs : le tourisme culturel (musées, monuments, fêtes et manifestations culturelles), le tourisme gastronomique et vini-viticole (quoique moins développé qu'à Beaune), et le tourisme d'affaires (palais des congrès et hôtels-restaurants adaptés).
+        </p>
+        <table>
+            <caption>Classement des 10 meilleurs sites touristiques</caption>
+            <thead>
+            <tr>
+                <th>Rang</th>
+                <th>Nom</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>N°1</td>
+                <td>Owl's Trail</td>
+            </tr>
+            <tr>
+                <td>N°2</td>
+                <td>Place de la Libération</td>
+            </tr>
+            <tr>
+                <td>N°3</td>
+                <td>Tour Philippe le Bon</td>
+            </tr>
+            <tr>
+                <td>N°4</td>
+                <td>Paroisse Notre-Dame de Dijon</td>
+            </tr>
+            <tr>
+                <td>N°5</td>
+                <td>Rue Des Forges</td>
+            </tr>
+            <tr>
+                <td>N°6</td>
+                <td>Cathédrale Saint-Bénigne de Dijon</td>
+            </tr>
+            <tr>
+                <td>N°7</td>
+                <td>Maison Millière</td>
+            </tr>
+            <tr>
+                <td>N°8</td>
+                <td>Jardin Darcy</td>
+            </tr>
+            <tr>
+                <td>N°9</td>
+                <td>Chartreuse de Champmol et Puits de Moïse</td>
+            </tr>
+            <tr>
+                <td>N°10</td>
+                <td>Porte Guillaume</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>Rang</th>
+                <th>Nom</th>
+            </tr>
+            </tfoot>
+        </table>
+        <h3 id="lieux" class="ancre">PAS DE FLEUVE, MAIS CENT CLOCHERS</h3>
+        <img src="media/tourisme_a_dijon.jpg"  alt="" width="300" height="150" class="float_right">
+        <p>
+            Dijon s'est imposée dès l'époque romaine comme un carrefour entre l'Europe du Nord et les régions méditerranéennes.
+            Au XIVème siècle, les ducs Valois de Bourgogne y fondent une des plus brillantes cours d'Europe. Dijon devient alors le siège de l'ordre de la Toison d'Or.<br/>
+            A partir de la Renaissance, les hôtels particuliers de la noblesse de robe redessinent "la ville aux cent clochers".
+        </p>
+
+        <h3>DES QUARTIERS SAUVEGARDÉS</h3>
+        <p>
+            Dijon déroule ses rues piétonnes entre maisons médiévales, églises et hôtels particuliers de la Renaissance. Aménagée par Hardouin-Mansart, la place de la Libération est l'une des plus belles de France. L'été, profitez de ses terrasses ensoleillées le temps d'une pause citadine...<br/>
+            Flânez ! Le parcours de la chouette vous guide à travers 22 étapes du secteur sauvegardé. Pour les sensations :<br/>suivez l'itinéraire en Segway et... gardez l'équilibre !
+        </p>
+        <h3 id="culture" class="ancre">DIJON, LA VILLE CULTURELLE</h3>
+
+        <img src="media/tourisme2.jpg"  alt="" width="300" height="150" class="float_left">
+        <p>
+            Monuments, musées ou panoramas... Prenez tout !<br/>
+            Au Musée des Beaux-Arts, installé dans le Palais des ducs et des Etats de Bourgogne, la peinture flamande côtoie la sculpture du XIXème siècle et les arts décoratifs. La collection d'art moderne est étonnante.<br/>
+            A la Chartreuse de Champmol, le "Puits de Moïse" témoigne du faste de la sculpture médiévale bourguignonne.
+            Inspirées de l'architecture classique, les Halles de Dijon ont été construites en 1868 par l'entreprise Eiffel.<br/>
+            L'équipe du Consortium est reconnue dans toute l'Europe pour sa capacité à dénicher les talents d'aujourd'hui.
+        </p>
+
+        <h3>VIGNES ET GOURMANDISES</h3>
+        <p>
+            Sur les pentes de l'ancienne appellation "Côte Dijonnaise", les festivités gourmandes sont à l'honneur ! Fêtes de la Vigne, Foire internationale et gastronomique (Table de Lucullus)... Profitez aussi de votre halte pour savourer les spécialités du Pré aux Clercs, de l'Hostellerie du Chapeau Rouge ou de Stéphane Derbord, trois restaurants étoilés. Sans oublier les nombreux bars à vins, qui vous régaleront de produits issus des caves de vignerons.
+        </p>
+
+        <h3 id="sport" class="ancre">SPORTS</h3>
+        <img src="media/stade.jpg"  alt="" width="300" height="150" class="float_right">
+        <p>
+            Les sportifs disposent de nombreuses infrastructures, stades, gymnases, courts de tennis, piscines, patinoire, bowlings, parcours de santé dans les parcs péri-urbains, centres hippiques, le golf Dijon-Bourgogne installé à <a href=https://fr.wikipedia.org/wiki/Norges-la-Ville>Norges-la-Ville</a> ou encore le <a href="https://fr.wikipedia.org/wiki/Circuit_de_Dijon-Prenois">circuit automobile de Dijon-Prenois</a> (un Grand Prix de Bourgogne ayant localement été organisé dès 1927).<br/>
+            L'ouverture en 2010 de la Piscine Olympique de Dijon permet d'accueillir des compétitions de haut niveau. Une fosse de plongée permet d'entraîner les champions locaux de plongée sous-marine.<br/>
+            Depuis 2007, la ville a entamé des travaux de rénovation du <a href="https://fr.wikipedia.org/wiki/Dijon#Sports">Stade Gaston-Gérard</a>. Finalement, sa capacité sera de 22 000 places assises. Enfin, la ville de Dijon a inauguré sa salle d'escalade Cime Altitude 245 le 1er avril 2010.<br/>
+            Sur le modèle de Paris Plage, la mairie de Dijon a aménagé une plage et des équipements de loisirs balnéaires autour du lac Kir. « Dijon plage » a accueilli 100 000 visiteurs en 2008. Ce dispositif complète les 4 piscines publiques, celles du Carrousel, des Grésilles, de Fontaine-d'Ouche et la piscine Olympique.
+            <br/>
+            Hymne du DFCO :<br/><br/>
+            <audio controls>
+                <source src="media/hymne_dfco.mp3" type="audio/ogg">
+            </audio>
+        </p>
+        <div id="date_affiche"></div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="https://fr.wikipedia.org/wiki/Dijon"><img alt="Logo Wiki" src="media/logo_wikipedia.png"></a></li>
+            <li><a href="https://www.u-bourgogne.fr/"><img alt="Logo Wiki" src="media/logo_universite.png"></a></li>
+            <li><a href="https://www.divia.fr/"><img alt="Logo Wiki" src="media/logo_divia.png"></a></li>
+            <li onclick="ouvrir_modal()"><img alt="Logo Wiki" src="media/logo_mail.png"></li>
+        </ul>
+        <div id="modal_contact" class="modal">
+            <div class="modal_content">
+                <div id="header_modal">
+                    <p class="close" onclick="fermer_modal()">&times;</p>
+                    <h2>Contact</h2>
+                </div>
+                <form action="javascript:void(0);">
+                    <p>
+                        <label for="mail">Votre adresse mail : </label>
+                        <input type="email" name="mail" id="mail" placeholder="exemple@exemple.com"/><br/><br/>
+                        <label for="avis">
+                            Votre commentaire :
+                            <textarea name="avis" id="avis" cols="60" placeholder="Ecrivez votre commentaire ici..."></textarea>
+                        </label><br/>
+                        <span class="button_modal_form">
+                    <button onclick="fermer_modal()">Fermer</button><input type="submit" value="Envoyer" onclick="submit_modal_form()">
+                        </span>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

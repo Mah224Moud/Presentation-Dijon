@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Antoine Masuyer, Mamoudou Diallo" />
+    <title>Gallerie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<nav id="menu">
+    <ul>
+        <li><a href="index.html"><div class="test">Accueil</div></a></li>
+        <li onmouseover="menu('ville',true);" onmouseout="menu('ville',false);"><a href="ville.html"><div class="test" id="ville_hover">Ville</div></a>
+            <ul id="ville">
+                <li><a href="ville.html#localisation">Localisation</a></li>
+                <li><a href="ville.html#topographie">Topographie</a></li>
+                <li><a href="ville.html#media">Média</a></li>
+                <li><a href="ville.html#religion">Religion</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('tourisme',true);" onmouseout="menu('tourisme',false);"><a href="tourisme.html"><div class="test" id="tourisme_hover">Tourisme</div></a>
+            <ul id="tourisme">
+                <li><a href="tourisme.html#ville">Ville</a></li>
+                <li><a href="tourisme.html#culture">Culture</a></li>
+                <li><a href="tourisme.html#sport">Sport</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('universite',true);" onmouseout="menu('universite',false);"><a href="universite.html"><div class="test" id="universite_hover">Université</div></a>
+            <ul id="universite">
+                <li><a href="universite.html#etablissement">Etablissements et enseignements</a></li>
+                <li><a href="universite.html#partenariat">Partenariat</a></li>
+                <li><a href="universite.html#classement">Classements internationaux</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('etudiant',true);" onmouseout="menu('etudiant',false);"><a href="vie_etudiante.html"><div class="test" id="etudian_hover">Vie étudiante</div></a>
+            <ul id="etudiant">
+                <li><a href="vie_etudiante.html#diplome">Diplôme</a></li>
+                <li><a href="vie_etudiante.html#loisirs">Loisirs</a></li>
+                <li><a href="vie_etudiante.html#classement">Classement</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('transport',true);" onmouseout="menu('transport',false);"><a href="transport.html"><div class="test" id="transport_hover">Transport en commun</div></a>
+            <ul id="transport">
+                <li><a href="transport.html#communes">Communes</a></li>
+                <li><a href="transport.html#lignes">Lignes</a></li>
+                <li><a href="transport.html#velo">Vélos</a></li>
+            </ul>
+        </li>
+        <li onmouseover="menu('gallerie',true);" onmouseout="menu('gallerie',false);"><a href="gallerie.html"><div class="test" id="gallerie_hover">Gallerie</div></a>
+            <ul id="gallerie">
+                <li><a href="gallerie.html#photos">Photos</a></li>
+                <li><a href="gallerie.html#videos">Vidéos</a></li>
+            </ul>
+        </li>
+        <li><a href="espace_membre.html"><div class="test">Espace Membre</div></a></li>
+    </ul>
+</nav>
+
+<section id="corps">
+    <div class="gallerie">
+        <h3 id="photos" class="ancre">Photos</h3>
+    <img src="media/bu_bourgogne.jpg"  alt="" onclick="show(0)">
+    <img src="media/bus_diva.jpg"  alt="" onclick="show(1)">
+    <img src="media/darcy.jpg"  alt="" onclick="show(2)"><br/>
+    <img src="media/dijonpanorama.jpeg"  alt="" onclick="show(3)">
+    <img src="media/eglise.jpg"  alt="" onclick="show(4)">
+    <img src="media/erasme.jpg"  alt="" onclick="show(5)"><br/>
+    <img src="media/esirem.jpg"  alt="" onclick="show(6)">
+    <img src="media/hotel1.jpg"  alt="" onclick="show(7)">
+    <img src="media/hotel2.jpg"  alt="" onclick="show(8)"><br/>
+    <img src="media/mirande.jpg"  alt="" onclick="show(9)">
+    <img src="media/mosquee.jpg"  alt="" onclick="show(10)">
+    <img src="media/musee.jpg"  alt="" onclick="show(11)"><br/>
+    <img src="media/musee2.jpg"  alt="" onclick="show(12)">
+    <img src="media/piscine.jpg"  alt="" onclick="show(13)">
+    <img src="media/plage.jpg"  alt="" onclick="show(14)"><br/>
+    <img src="media/plage2.jpg"  alt="" onclick="show(15)">
+    <img src="media/rep.jpg"  alt="" onclick="show(16)">
+    <img src="media/reseau_divia.jpg"  alt="" onclick="show(17)"><br/>
+    <img src="media/resto1.jpg"  alt="" onclick="show(18)">
+    <img src="media/resto2.jpg"  alt="" onclick="show(19)">
+    <img src="media/rue1.jpg"  alt="" onclick="show(20)"><br/>
+    <img src="media/sciences_humaines.jpg"  alt="" onclick="show(21)">
+    <img src="media/stade.jpg"  alt="" onclick="show(22)">
+    <img src="media/stade1.jpg"  alt="" onclick="show(23)"><br/>
+    <img src="media/synagogue.jpg"  alt="" onclick="show(24)">
+    <img src="media/toison1.jpg"  alt="" onclick="show(25)">
+    <img src="media/toison2.jpg"  alt="" onclick="show(26)"><br/>
+    <img src="media/tourisme1.jpg"  alt="" onclick="show(27)">
+    <img src="media/tourisme2.jpg"  alt="" onclick="show(28)">
+    <img src="media/tourisme3.jpg"  alt="" onclick="show(29)"><br/>
+    <img src="media/tourisme_a_dijon.jpg"  alt="" onclick="show(30)">
+    <img src="media/tram_divia.jpg"  alt="" onclick="show(31)">
+    <img src="media/universite_de_bourgogne.jpg"  alt="" onclick="show(32)"><br/>
+    <img src="media/velo_divia.jpg"  alt="" onclick="show(33)">
+    <img src="media/vie_etudiante.jpg"  alt="" onclick="show(34)">
+    <img src="media/vie_etudiante1.jpg"  alt="" onclick="show(35)"><br/>
+    <img src="media/vie_etudiante2.jpg"  alt="" onclick="show(36)">
+    <img src="media/vie_etudiante3.jpg"  alt="" onclick="show(37)">
+    <hr/>
+        <h3 id="videos" class="ancre">Vidéos</h3>
+        <iframe width="250" height="160" src="https://www.youtube.com/embed/H8P4sz8eSLY" allowfullscreen></iframe>
+        <iframe width="250" height="160" src="https://www.youtube.com/embed/lMd3y_Ll0kc"  allowfullscreen></iframe>
+    </div>
+    <div id="modal_image"><img alt="Fleche suivante" src="media/fleche_precedent.png" id="next" class="fleche" onclick="precedent()"><img class="fleche" alt="Fleche précédent" src="media/fleche_suivante.png" id="precedent" onclick="precedent()"><button onclick="fermer_diapo()">Fermer le Diaporama</button></div>
+    <div id="date_affiche"></div>
+</section>
+
+<footer>
+    <ul>
+        <li><a href="https://fr.wikipedia.org/wiki/Dijon"><img alt="Logo Wiki" src="media/logo_wikipedia.png"></a></li>
+        <li><a href="https://www.u-bourgogne.fr/"><img alt="Logo Wiki" src="media/logo_universite.png"></a></li>
+        <li><a href="https://www.divia.fr/"><img alt="Logo Wiki" src="media/logo_divia.png"></a></li>
+        <li onclick="ouvrir_modal()"><img alt="Logo Wiki" src="media/logo_mail.png"></li>
+    </ul>
+    <div id="modal_contact" class="modal">
+        <div class="modal_content">
+            <div id="header_modal">
+                <p class="close" onclick="fermer_modal()">&times;</p>
+                <h2>Contact</h2>
+            </div>
+            <form action="javascript:void(0);">
+                <p>
+                    <label for="mail">Votre adresse mail : </label>
+                    <input type="email" name="mail" id="mail" placeholder="exemple@exemple.com"/><br/><br/>
+                    <label for="avis">
+                        Votre commentaire :
+                        <textarea name="avis" id="avis" cols="60" placeholder="Ecrivez votre commentaire ici..."></textarea>
+                    </label><br/>
+                    <span class="button_modal_form">
+                    <button onclick="fermer_modal()">Fermer</button><input type="submit" value="Envoyer" onclick="submit_modal_form()">
+                        </span>
+                </p>
+            </form>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
